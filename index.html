@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="theme-color" content="#735BC1" />
+        <meta name="keywords" content="discord,emoji,converter,emojifier,itspepperpot" />
+        <meta name="author" content="Oliver Bevan" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Discord Emojifier</title>
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet" /> 
+        <link href="https://fonts.googleapis.com/css?family=Fira+Mono" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <h1>😎🎶🎃👌</h1>
+            <h2>Discord Emojifier.</h2>
+            <h3>Simply enter the text to convert and watch the magic happen.</h3>
+    
+            <textarea onchange="updateOutput();" onkeyup="updateOutput();" rows="6" id="input" placeholder="Text goes here...">
+
+            </textarea><br />
+            <p>Output: <button onclick="switchOutput();">View output</button></p>
+            <textarea id="output">
+    
+            </textarea><br />
+            <form><label>Trim to 2000 characters<input type="checkbox" /></label></form>
+            <button onclick="copyToClipboard();">Copy to clipboard</button>
+        </main>
+        <footer>
+            <p>Made by Oliver Bevan in 2017. <a href="https://github.com/ItsPepperpot">Visit my GitHub</a></p>
+        </footer>
+        <script src="converter.js"></script>
+    </body>
+</html>
