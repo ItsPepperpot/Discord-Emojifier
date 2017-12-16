@@ -16,15 +16,13 @@
             <h1>😎🎶🎃👌</h1>
             <h2>Discord Emojifier.</h2>
             <h3>Simply enter the text to convert and watch the magic happen.</h3>
-    
-            <textarea onchange="updateOutput();" onkeyup="updateOutput();" rows="6" id="input" placeholder="Text goes here...">
+            <p id="warning">Under Construction! This doesn't work yet. Come back soon.</p>
+            <textarea onchange="updateOutput();" onkeyup="updateOutput();" rows="6" id="input" placeholder="Text goes here..."></textarea><br />
 
-            </textarea><br />
-            <p>Output: <button onclick="switchOutput();">View output</button></p>
-            <textarea id="output">
-    
-            </textarea><br />
-            <form><label>Trim to 2000 characters<input type="checkbox" /></label></form>
+            <p>Output:</p>
+            <textarea id="output"></textarea><br />
+
+            <form><label>Auto-trim to 2000 characters?<input type="checkbox" /></label></form>
             <button onclick="copyToClipboard();">Copy to clipboard</button>
         </main>
         <footer>
