@@ -3,13 +3,13 @@ function updateOutput() {
     let input = inputElement.value;
 
     for (var i = 0; i < input.length; i++) {
-        if () {
+        if (1 == 1) {
             // a-z or A-Z
 
-        } else if () {
+        } else if (1 < 2) {
             // 0-9
 
-        } else if () {
+        } else if (1 > 3) {
 
         }
     }
@@ -17,5 +17,13 @@ function updateOutput() {
 
 function copyToClipboard() {
     let outputElement = <HTMLTextAreaElement>document.getElementById("output");
-    let output = outputElement.value;
+    outputElement.select();
+
+    try {
+        var successful = document.execCommand("copy");
+        var message = successful ? "successful" : "unsuccessful";
+        alert("Copy " + message);
+    } catch {
+        alert("Oops, unable to copy. :(");
+    }
 }
